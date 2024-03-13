@@ -1,0 +1,113 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 100px;
+    margin-bottom: 50px;
+  }
+  
+  .card {
+    width: 500px;
+    border: 1px solid rgb(131, 129, 129);
+    border-radius: 10px;
+    margin: 10px;
+    padding: 20px;
+  }
+  
+  @media (max-width: 600px) {
+    .card {
+      width: 90%;
+    }
+    .radio label {
+      font-size: 7px;
+      margin-left: 4px;
+    }
+    .radio input{
+      transform: scale(4);
+   }
+  
+    .buttons {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+  
+  .fields {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .field {
+    width: calc(50% - 7.5px);
+  }
+  
+  .field label {
+    display: block;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 2px;
+  }
+  
+  input,
+  textarea,
+  select {
+    width: 100%;
+    border-radius: 3px;
+    height: 32px;
+    font-size: 16px;
+    border: 1px solid #6d6d6d;
+    outline: none;
+    letter-spacing: 0.9px;
+  }
+  
+  .radio {
+    display: flex;
+  }
+  
+  .radio label {
+    font-size: 16px;
+    margin-top: 7px;
+    
+  }
+  
+  textarea {
+    height: auto;
+    resize: vertical;
+  }
+  
+  .dropdown {
+    height: 32px;
+    border-radius: 5px;
+    background: transparent;
+  }
+  
+  .fileupload {
+    width: 100%;
+    border: none;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+  }
+  
+  button {
+    padding: 10px 40px 10px 40px;
+    border-radius: 5px;
+    background-color: #10a37f;
+    color: whitesmoke;
+    transition: background-color 0.3s ease;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .buttons button:hover {
+    background-color: #0c8769;
+  }
+  
+  span{
+    color: red;
+  }
